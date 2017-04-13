@@ -1,5 +1,4 @@
 # AML_RVR-SVR_project
 
-*.m~
-libsvm/*
-sparseBayes/*
+Put libsvm source code in libsvm/
+Put sparseBayes source code in sparseBayes/ 
