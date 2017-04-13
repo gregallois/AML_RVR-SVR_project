@@ -63,11 +63,11 @@ value5 = yRefDataset;
 Dataset_1 = struct(field1,value1,field2,value2,field3,value3,...
                     field4,value4,field5, value5);
 
-save('Dataset_1', 'Dataset_1');
+save('../datasets/Dataset_1', 'Dataset_1');
 
 
 %% test svr
-addpath(genpath('libsvm'));
+addpath(genpath('../libsvm'));
 
 % Train model (type svmtrain in command window to see parameters signification)
 model = svmtrain(yDataset, xDataset, '-s 4 -t 2 -n 0.5 -g 2');
@@ -91,7 +91,7 @@ legend('Target function', 'Datapoints', 'Modeled function', 'Support vectors');
 
 
 %% test rvr
-addpath(genpath('sparseBayes'));
+addpath(genpath('../sparseBayes'));
 
 % Basis functions generation (gaussian kernel)
 C = xDataset;
