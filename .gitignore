@@ -4,7 +4,11 @@
 #but...
 !.gitignore
 !.README.md
+!src/*.m
+!src/*.mat
 !src/**/*.m
 !src/**/*.mat
+!datasets/*.m
+!datasets/*.mat
 !datasets/**/*.m
 !datasets/**/*.mat
